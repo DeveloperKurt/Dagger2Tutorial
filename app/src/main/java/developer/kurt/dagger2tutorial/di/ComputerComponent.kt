@@ -9,7 +9,6 @@ import developer.kurt.dagger2tutorial.MainActivity
 import javax.inject.Named
 import javax.inject.Singleton
 
-@Singleton
 @Component(modules = arrayOf(ComputerModule::class, CPUModule::class, GPUModule::class))
 interface ComputerComponent {
     fun inject(mainActivity: MainActivity)
